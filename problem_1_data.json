@@ -1,0 +1,16 @@
+{
+  "제품색상": [
+    {
+      "색상": "빨강",
+      "이미지URL": "https://example.com/red-product.jpg"
+    },
+    {
+      "색상": "파랑",
+      "이미지URL": "https://example.com/blue-product.jpg"
+    },
+    {
+      "색상": "녹색",
+      "이미지URL": "https://example.com/green-product.jpg"
+    }
+  ]
+}
