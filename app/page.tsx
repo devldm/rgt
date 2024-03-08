@@ -1,45 +1,36 @@
-"use client";
+import Link from "next/link";
 
-import Image from "next/image";
-import { products } from "./data/products";
-import { useState } from "react";
-import { product } from "@/types/types";
+const navigationItems: { href: string; text: string }[] = [
+  {
+    href: "/product-page",
+    text: "1. Interactive Web Page Development",
+  },
+  {
+    href: "/simulation",
+    text: "2. Autonomous Robot Simulation",
+  },
+  {
+    href: "/dashboard",
+    text: "3. Data Visualization for Dashboard Development",
+  },
+];
 
 export default function Home() {
-  const [selectedProduct, setSelectedProduct] = useState<product>();
   return (
-    <main className="flex min-h-screen flex-col items-center p-12 md:p-24">
-      <div className="w-full md:w-[60%]">
-        <div className="flex flex-row gap-6 w-full justify-center">
-          {products.map((product) => (
-            <button
-              key={product.productId}
-              className="bg-emerald-600 py-4 px-6 rounded-md hover:bg-emerald-800 text-lg"
-              onClick={() => {
-                setSelectedProduct(product);
-              }}
-            >
-              {product.productName}
-            </button>
-          ))}
-          <button
-            className="bg-red-600 rounded-md py-4 px-6 hover:bg-red-700 text-lg"
-            onClick={() => setSelectedProduct(undefined)}
-          >
-            삭제
-          </button>
-        </div>
-        {selectedProduct && (
-          <div className="bg-slate-900 p-10 rounded-md mt-10 flex flex-col items-center gap-4 w-full">
-            <Image
-              src={selectedProduct.productImageUrl}
-              alt={`Photo of product: ${selectedProduct.productName}`}
-              width={"50"}
-              height={"50"}
-            />
-            <p className="text-2xl">{selectedProduct.productName}</p>
-          </div>
-        )}
+    <main className="flex min-h-screen flex-col items-center justify-center p-12 md:p-24">
+      <div className="">
+        <ul>
+          {navigationItems.map((item, index) => {
+            return (
+              <li
+                className="hover:text-emerald-500 text-lg p-4"
+                key={`${item.href}-${index}`}
+              >
+                <Link href={item.href}>{item.text}</Link>
+              </li>
+            );
+          })}
+        </ul>
       </div>
     </main>
   );

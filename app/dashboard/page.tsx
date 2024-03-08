@@ -26,12 +26,12 @@ export default async function Dashboard() {
   );
 
   return (
-    <div className="min-h-screen min-w-screen">
+    <div className="flex justify-center flex-col items-center mx-auto min-h-screen min-w-screen lg:w-[70%]">
       <Chart data={data} />
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 w-full">
         {mergedProductData.map((product: productData) => {
           return (
-            <div className="bg-slate-900 rounded-t-md p-4 flex flex-col gap-4">
+            <div className="bg-slate-900 rounded-t-md p-4 flex flex-col gap-4" key={product.제품}>
               <p className="text-2xl font-bold">{product.제품}</p>
               <p>점수: {product.점수}</p>
               <p>배터리수명: {product.배터리수명}</p>

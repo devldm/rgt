@@ -23,6 +23,7 @@ export default function Simulation() {
             const isPath = combinedPath.some(
               (coord) => coord[0] === colIndex && coord[1] === rowIndex,
             );
+
             const isWaypoint = waypoints.some(
               (waypoint) =>
                 (waypoint.start.x === colIndex &&
@@ -32,7 +33,7 @@ export default function Simulation() {
             return (
               <div
                 key={`${rowIndex}-${colIndex}`}
-                className={`flex w-20 h-20 p-4 justify-center items-center border border-gray-300 ${isWaypoint ? "bg-purple-600" : ""} ${isPath ? "bg-blue-400" : ""} ${node.walkable ? "bg-green-400" : "bg-red-400"}`}
+                className={`flex w-20 h-20 p-4 justify-center items-center border border-gray-300  ${isWaypoint ? "bg-purple-600" : ""}  ${isPath ? "bg-blue-400" : "bg-green-400"} `}
               >
                 <span className="text-md text-black">
                   {`[${node.x}, ${node.y}]`}

@@ -1,9 +1,9 @@
 # 알지티 assignment
 
-파이지 라우팅
+## 파이지 라우팅
 
 ```tsx
-/interactive // interactive web page
+/product-page // interactive web page
 
 /simulation // robot simulation
 
@@ -15,7 +15,7 @@
 - Typescript
 - Next.js
 - tailwindcss
-- recharts (Charts / Visualisation)
+- recharts (Charts / Visualization)
 - pathfinding.js (Robot simulation)
 
 ## How to run locally
@@ -38,3 +38,17 @@ npm run dev
 ```bash
 http:///localhost:3000
 ```
+
+## Screenshots
+
+Navigation
+![alt text](public/readme/image.png)
+
+Interactive Web Page Development
+![alt text](public/readme/image-1.png)
+
+Autonomous Robot Simulation
+![alt text](public/readme/image-6.png)
+
+Data Visualization for Dashboard Development
+![alt text](public/readme/image-4.png)
