@@ -10,7 +10,7 @@
 /dashboard // dashboard
 ```
 
-## 기술 스탁
+## 기술 스택
 
 - Typescript
 - Next.js
@@ -20,23 +20,28 @@
 
 ## How to run locally
 
-1. Unzip the folder
+1. Download & Unzip the folder or Clone from github
+
+```bash
+git clone https://github.com/devldm/rgt.git
+```
+
 2. Install dependencies
 
 ```bash
 npm install
 ```
 
-1. Run the project
+3. Run the project
 
 ```bash
 npm run dev
 ```
 
-1. Navigate to [localhost](http://localhost) in browser
+4. Navigate to [localhost](http://localhost) in browser
 
 ```bash
-http:///localhost:3000
+http://localhost:3000
 ```
 
 ## Screenshots
