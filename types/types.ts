@@ -4,17 +4,6 @@ export type product = {
   productImageUrl: string;
 };
 
-type productSales = {
-  A: number;
-  B: number;
-  C: number;
-};
-
-export type salesData = {
-  month: number;
-  productSales: productSales;
-};
-
 export type productScores = {
   제품: string;
   점수: number;

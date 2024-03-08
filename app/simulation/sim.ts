@@ -5,7 +5,7 @@ var PF = require("pathfinding");
 export let finder = new PF.AStarFinder();
 export let grid = generateGrid(10, 10);
 
-// Coordinate and waypoint initalisation
+// Coordinate and waypoint initialization
 let gridStart: coordinate = { x: 0, y: 0 };
 let callBell: coordinate = { x: 2, y: 3 };
 let elevator: coordinate = { x: 5, y: 5 };

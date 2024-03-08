@@ -20,7 +20,7 @@
 
 ## How to run locally
 
-1. Download & Unzip the folder or Clone from github
+1. Clone from github
 
 ```bash
 git clone https://github.com/devldm/rgt.git
