@@ -1,6 +1,6 @@
-# 알지티 assignment
+# 알지티 코딩 과제
 
-## 파이지 라우팅
+## 페이지 라우팅
 
 ```tsx
 /product-page // interactive web page
