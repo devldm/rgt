@@ -34,3 +34,25 @@ export type productData = {
 };
 
 type processingSpeed = "빠름" | "보통" | "느림";
+
+export type coordinate = {
+  x: number;
+  y: number;
+};
+
+export type pathRoute = {
+  start: coordinate;
+  end: coordinate;
+};
+
+export type PFGrid = {
+  width: number;
+  height: number;
+  nodes: Node[][];
+};
+
+type Node = {
+  x: number;
+  y: number;
+  walkable: boolean;
+};
